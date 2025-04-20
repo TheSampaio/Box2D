@@ -4,8 +4,8 @@ project "Box2D"
 	cppdialect "C++11"
 	staticruntime "off"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir (".Output/Bin/" .. output_dir .. "%{prj.name}")
+    objdir    (".Output/Obj/" .. output_dir .. "%{prj.name}")
 
 	files
 	{
