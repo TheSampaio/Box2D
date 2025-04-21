@@ -1,6 +1,7 @@
 build/
 .vscode/
 .vs/
+.Out/
 .cap
 .DS_Store
 .cache/

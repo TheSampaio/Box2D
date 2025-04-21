@@ -3,9 +3,10 @@ project "box2d"
 	language "C++"
 	cppdialect "C++11"
 	staticruntime "off"
+    location "build"
 
-	targetdir (".Output/Bin/" .. output_dir .. "%{prj.name}")
-    objdir    (".Output/Obj/" .. output_dir .. "%{prj.name}")
+    targetdir (".Out/Bin/" .. output_dir .. "%{prj.name}")
+    objdir    (".Out/Obj/" .. output_dir .. "%{prj.name}")
 
 	files
 	{
