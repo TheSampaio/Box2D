@@ -1,22 +1,20 @@
 project "box2d"
 	kind "StaticLib"
 	language "C++"
-	cppdialect "C++11"
+	cppdialect "C++17"
 	staticruntime "off"
     location "build"
 
     targetdir (".Out/Bin/" .. output_dir .. "%{prj.name}")
     objdir    (".Out/Obj/" .. output_dir .. "%{prj.name}")
 
-	files
-	{
+	files {
+		"include/**.h",
 		"src/**.h",
-		"src/**.cpp",
-		"include/**.h"
+		"src/**.cpp"
 	}
 
-	includedirs
-	{
+	includedirs {
 		"include",
 		"src"
 	}
