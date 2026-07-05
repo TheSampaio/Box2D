@@ -1,7 +1,7 @@
 project "box2d"
 	kind "StaticLib"
-	language "C++"
-	cppdialect "C++17"
+	language "C"
+	cdialect "C17"
 	staticruntime "off"
     location "build"
 
@@ -11,7 +11,7 @@ project "box2d"
 	files {
 		"include/**.h",
 		"src/**.h",
-		"src/**.cpp"
+		"src/**.c"
 	}
 
 	includedirs {
